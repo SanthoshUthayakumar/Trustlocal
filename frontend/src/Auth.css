@@ -1,0 +1,104 @@
+/* Full page background */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+   background-image: url('background.png');
+
+  /* Center the image */
+  background-position:right;
+
+  /* Do not repeat the image */
+  background-repeat: no-repeat;
+
+  /* Scale the image to cover the entire container */
+  background-size: cover;
+
+  /* Set a height so the container is visible */
+  height: 785px;
+  
+}
+
+/* Center container */
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Card box */
+.auth-card {
+  background: white;
+  padding: 40px;
+  width: 350px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Title */
+.auth-card h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+.auth-card h6 {
+    text-align: left;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  color: #333;
+}
+/* Input fields */
+.auth-card input,
+.auth-card select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+/* Input focus effect */
+.auth-card input:focus,
+.auth-card select:focus {
+  border-color: #667eea;
+  outline: none;
+  box-shadow: 0 0 5px rgba(102, 126, 234, 0.5);
+}
+
+/* Button */
+.auth-card button {
+  width: 100%;
+  padding: 10px;
+  background: #667eea;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Button hover */
+.auth-card button:hover {
+  background: #2031d0;
+}
+
+/* Error message */
+.error-message {
+  color: red;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/* Register link */
+.auth-card a {
+  color: #1f9ce4;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.auth-card a:hover {
+  text-decoration: underline;
+}

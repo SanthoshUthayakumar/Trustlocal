@@ -1,0 +1,270 @@
+/* =========================
+   GLOBAL CONTAINER
+========================= */
+
+.user-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #eef2ff, #f8fafc);
+  padding: 30px 50px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.user-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.user-header h2 {
+  margin: 0;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.user-score-badge {
+  background: #4f46e5;
+  color: white;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+  margin-top: 8px;
+  display: inline-block;
+}
+
+.user-logout-btn {
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.user-logout-btn:hover {
+  background: #dc2626;
+}
+
+/* =========================
+   TABS
+========================= */
+
+.user-tabs {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.user-tabs button {
+  background: white;
+  border: 1px solid #e5e7eb;
+  padding: 8px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.user-active-tab {
+  background: #4f46e5 !important;
+  color: white;
+  border: none;
+}
+
+/* =========================
+   CREATE CARD
+========================= */
+
+.user-create-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  margin-bottom: 30px;
+}
+
+.user-create-card input,
+.user-create-card textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+}
+
+.user-create-card button {
+  margin-top: 15px;
+  background: #4f46e5;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* =========================
+   FILTER BOX
+========================= */
+
+.filter-box {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  margin-bottom: 25px;
+}
+
+.filter-box input {
+  width: 30%;
+  padding: 8px;
+  margin-right: 10px;
+  margin-top: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+}
+
+.filter-buttons {
+  margin-top: 15px;
+}
+
+.filter-buttons button {
+  margin-right: 10px;
+  padding: 6px 16px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.filter-buttons button:first-child {
+  background: #4f46e5;
+  color: white;
+}
+
+.filter-buttons button:last-child {
+  background: #9ca3af;
+  color: white;
+}
+
+/* =========================
+   WORKER GRID
+========================= */
+
+.user-posts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+/* =========================
+   WORKER CARD
+========================= */
+
+.user-post-card {
+  background: white;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  transition: 0.3s;
+}
+
+.user-post-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+}
+
+.user-post-card img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.user-post-card h4 {
+  margin: 5px 0;
+  font-size: 18px;
+}
+
+.user-post-card p {
+  margin: 4px 0;
+  font-size: 14px;
+}
+
+/* =========================
+   BOOKING INPUT
+========================= */
+
+.user-post-card input[type="number"] {
+  width: 100%;
+  padding: 6px;
+  margin-top: 8px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+}
+
+.total-amount {
+  font-weight: bold;
+  color: #16a34a;
+  margin-top: 6px;
+}
+
+/* =========================
+   BOOK BUTTON
+========================= */
+
+.user-request-btn {
+  margin-top: 10px;
+  width: 100%;
+  padding: 8px;
+  background: #16a34a;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.user-request-btn:hover {
+  background: #15803d;
+}
+
+/* =========================
+   REQUEST / JOB CARDS
+========================= */
+
+.user-request-card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+.user-accept-btn {
+  background: #16a34a;
+  color: white;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 6px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.user-reject-btn {
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.user-request-card select {
+  margin-top: 10px;
+  padding: 6px;
+  border-radius: 6px;
+}
